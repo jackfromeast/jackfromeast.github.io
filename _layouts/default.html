@@ -1,0 +1,235 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E00L9PT3V9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-E00L9PT3V9');
+  </script>
+  <title>{{ site.name }}</title>
+
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+  <meta name="author" content="{{ site.name }}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <style>
+    p, h3, td, tr, strong {
+      font-size: 16px;
+    }
+  </style>
+</head>
+
+<body>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:67%;vertical-align:middle">
+              <h1>
+                Zhengyu Liu
+              </h1>
+              <p>
+                I am currently a first-year Ph.D. student in Computer Science at <a href="https://www.jhu.edu/">Johns Hopkins University</a>, advised by <a href="https://yinzhicao.org">Prof. Yinzhi Cao</a>. Before joining JHU, I received my bachelor's degree in Cybersecurity from <a href="https://scu.edu.cn/">Sichuan University</a>. During my undergrad, I was very fortunate to be advised by <a href="https://www.chenghuang.org/">Prof. Cheng Huang</a>.
+              </p>
+              <p>
+                My research interest lies in Web Security, Software Security and AI for Security, especially leveraging program analysis approaches to automatically detect/exploit/patch vulnerabilities in real-world complex applications, softwares and system.
+              </p>
+              <p>
+                Besides, I am a CTF player specialized in pwn and web challenges. I lead the team Z0D1AC (JHU academic team) and is a member of <a href="https://www.thehackerscrew.team/members">thehackerscrew</a> (international team, top 10 in <a href="https://ctftime.org/">CTFTime.org</a>).
+              </p>
+              <p style="text-align:center">
+                <a target="_blank" href="https://mailhide.io/e/B8TyS"> Email</a> &nbsp;/&nbsp;
+                <a href="https://github.com/jackfromeast">GitHub</a> &nbsp;/&nbsp;
+                <a href="https://jackfromeast.site">Blog</a> &nbsp;/&nbsp;
+                <a target="_blank" href="">CV</a> &nbsp;/&nbsp;
+                <a target="_blank" href=""> Google Scholar </a> &nbsp;/&nbsp
+                <a target="_blank" href=""> Linkedin </a>
+              </p>
+            </td>
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <img style="width:100%;max-width:100%" alt="profile photo" src="images/IMG_9657.jpg">
+            </td>
+          </tr>
+        </table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
+              <h2>Publications</h2>
+            </td>
+          </tr>
+        </table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;font:15px">
+
+          {% for post in site.posts %}
+          {% for cat in post.categories %}
+          {% if cat == 'research' %}
+          <tr>
+            <!-- <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            </td> -->
+            <td style="padding:0% 2.5%;width:75%;vertical-align:middle">
+              <h3>{{post.title}}</h3>
+              <br>
+              {{post.authors}}
+
+              <br>
+              <!-- <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }} -->
+              <em>{{post.venue}}</em>
+              {% if post.award %}
+              <br>
+              <span style="color: red; "> <strong>{{post.award}}</strong></span>
+              {% endif %}
+              <br>
+              {% if post.arxiv %}
+              <a href="{{post.arxiv}}">arxiv</a> /
+              {% endif %}
+              {% if post.video %}
+              <a href="{{post.video}}">video</a> /
+              {% endif %}
+              {% if post.code %}
+              <a href="{{post.code}}">code</a> /
+              {% endif %}
+              {% if post.poster %}
+              <a href="{{post.poster}}">poster</a> /
+              {% endif %}
+              {% if post.slides %}
+              <a href="{{post.slides}}">slides</a> /
+              {% endif %}
+              {% if post.website %}
+              <a href="{{post.website}}">website</a> /
+              {% endif %}
+              {% if post.youtube %}
+              <a href="{{post.youtube}}">youtube</a> /
+              {% endif %}
+              <p></p>
+              {{ post.excerpt }}
+            </td>
+          </tr>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:2.5%;width:100%;vertical-align:middle;">
+              <h2>Capture The Flags</h2>
+              <table>
+                <tr>
+                  <td><em>2023 Jan. - Now</em> &emsp;</td>
+                  <td>
+                    <p>Team member @ TheHackersCrew
+                      <br>
+                      Won <strong>17</strong> medals for the year of 2023, <strong>8 <span style="color:gold">Gold</span> + 4 <span style="color:silver">Silver</span> + 3 <span style="color:burlywood">Bronze</span></strong>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td><em>2022 Oct. - Now</em> &emsp;</td>
+                  <td>
+                    <p>Co-lead @ The Group Z0D1AC
+                      <br>
+                      Achieved 3th place RaymondJamesCTF 2023 <strong>($2000 cash prize)</strong>, etc.
+                    </p>
+                  </td>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
+              <h2>Selected Honors & Awards</h2>
+              <table>
+                <tr>
+                  <td><em>2022 May</em> &emsp;</td>
+                  <td>Cybersecurity Elite Honor, School of Cyber Science and Engineering, Sichuan University</td>
+                </tr>
+                <tr>
+                  <td><em>2022 Dec.</em> &emsp;</td>
+                  <td>The 404 Scholarship, School of Cyber Science and Engineering, Sichuan University</td>
+                </tr>
+                <tr>
+                  <td><em>2021 Sep.</em> &emsp;</td>
+                  <td>First Class Scholarship, School of Cyber Science and Engineering, Sichuan University</td>
+                </tr>
+                <tr>
+                  <td><em>2020 & 2021</em> &emsp;</td>
+                  <td>Outstanding Student Honor, Sichuan University</td>
+                </tr>
+              </table>
+              <br>
+              <table>
+                <tr>
+                  <td><em>2021 Nov.</em> &emsp;</td>
+                  <td>The 9th Place, 2021 ByteDance Security AI Competition, ByteDance(TikTok)</td>
+                </tr>
+                <tr>
+                  <td><em>2021 July</em> &emsp;</td>
+                  <td>The 2th Place, School of Computing Summer Workshop, National University of Singapore</td>
+                </tr>
+                <tr>
+                  <td><em>2020 Sep.</em> &emsp;</td>
+                  <td>Excellent Thesis, Innovation and Entrepreneurship Training Program for College Students</td>
+                </tr>
+                <tr>
+                  <td><em>2020 Sep.</em> &emsp;</td>
+                  <td>Third Prize, The 4th “Qiangwang Cup” National Cybersecurity Challenge</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
+              <h2>Experiences</h2>
+              <table>
+                <tr>
+                  <td><em>2023 Sep. - 2023 Dec.</em> &emsp;</td>
+                  <td>Course Assistant, EN.601.340/440/640 Web Security (23 Fall), JHU</td>
+                </tr>
+                <tr>
+                  <td><em>2023 June - 2023 Aug.</em> &emsp;</td>
+                  <td>Research Assistant, JHU, Advisor: Dr. Yinzhi Cao</td>
+                </tr>
+                <tr>
+                  <td><em>2020 Aug. - 2022 June</em> &emsp;</td>
+                  <td>Research Assistant, Sichuan University, Advisor: Dr. Cheng Huang</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:0px">
+              <br>
+              <p style="text-align:center;font-size:small;">
+                Design and source code from <a style="font-size:small;" href="https://jonbarron.info">Jon Barron's website</a>
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
+

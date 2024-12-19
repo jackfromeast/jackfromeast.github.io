@@ -265,6 +265,16 @@
                 {% endif %}
                 {% endfor %}
               </table>
+              A complete list:
+              <table style="width:100%;table-layout:auto;">
+                {% for vuln in site.data.vulns %}
+                <tr>
+                  <td><a href="{{ vuln.link }}">{{ vuln.cve }}</a></td>
+                  <td><a href="{{ vuln.product_link }}">{{ vuln.product }}</a></td>
+                  <td>{{ vuln.type }}</td>
+                </tr>
+                {% endfor %}
+              </table>
             </td>
           </tr>
         </table>

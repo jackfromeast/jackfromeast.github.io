@@ -44,22 +44,21 @@
                 I am currently a first-year Ph.D. student in Computer Science at <a href="https://www.jhu.edu/">Johns Hopkins University</a>, advised by <a href="https://yinzhicao.org">Prof. Yinzhi Cao</a>. Before joining JHU, I received my bachelor's degree in Cybersecurity from <a href="https://scu.edu.cn/">Sichuan University</a>. During my undergrad, I was very fortunate to be advised by <a href="https://www.chenghuang.org/">Prof. Cheng Huang</a>.
               </p>
               <p>
-                My research interest lies in Web Security, Software Security and AI for Security, especially leveraging program analysis approaches to automatically detect/exploit/patch vulnerabilities in real-world complex applications, software and system.
+                My research interest lies in Web Security, Software Security and AI for Security, especially leveraging program analysis approaches to detect/exploit/patch vulnerabilities in real-world complex applications and systems.
               </p>
               <p>
-                Besides, I am a CTF player specializing in pwn and web challenges. I lead the team Z0D1AC (JHU academic team) and is a member of <a href="https://www.thehackerscrew.team/members">thehackerscrew</a> (international team, Top 10 in <a href="https://ctftime.org/">CTFTime.org</a>). 
+                Besides, I am a CTF pwn&web player. I lead the team Z0D1AC (JHU academic team) and is a member of <a href="https://www.thehackerscrew.team/members">thehackerscrew</a> (international team, Top 10 in <a href="https://ctftime.org/">CTFTime.org</a>). 
               </p>
               <p>
                 I played with team <a href="https://www.mccormick.northwestern.edu/computer-science/news-events/news/articles/2024/safeguarding-critical-software-infrastructure-through-novel-ai-systems.html">42-b3yond-6ug</a> in the <a href="https://aicyberchallenge.com/">AIxCC</a> competition, where we were awarded $2 million and advanced to the final competition (Top 7) in August 2025.
               </p>
               <p style="text-align:center">
-<!--                 <a target="_blank" href="https://mailhide.io/e/B8TyS"> Email</a>  -->
                 <a href="https://mailhide.io/e/zmIXSlvn" onclick="popup=window.open('https://mailhide.io/e/zmIXSlvn','mailhidepopup','width=580,height=635'); return false;">Email</a>&nbsp;/&nbsp;
                 <a href="https://github.com/jackfromeast">GitHub</a> &nbsp;/&nbsp;
                 <a href="https://jackfromeast.site">Blog</a> &nbsp;/&nbsp;
                 <a target="_blank" href="">CV</a> &nbsp;/&nbsp;
-                <a target="https://scholar.google.com/citations?user=i8s4fWgAAAAJ&hl=zh-CN&oi=sra" href=""> Google Scholar </a> &nbsp;/&nbsp
-                <a target="_blank" href=""> Linkedin </a>
+                <a target="https://scholar.google.com/citations?user=i8s4fWgAAAAJ&hl=zh-CN&oi=sra" href="https://scholar.google.com/citations?user=i8s4fWgAAAAJ&hl=zh-CN&oi=sra"> Google Scholar </a> &nbsp;/&nbsp
+                <a target="_blank" href="https://www.linkedin.com/in/zhengyu-liu-363b5121b/"> Linkedin </a>
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
@@ -81,42 +80,28 @@
           {% for cat in post.categories %}
           {% if cat == 'research' %}
           <tr>
-            <!-- <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
-            </td> -->
             <td style="padding:0% 2.5%;width:75%;vertical-align:middle">
               <h3>{{post.title}}</h3>
               <br>
               {{post.authors}}
-
               <br>
-              <!-- <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }} -->
-              <em>{{post.venue}}</em>
-              {% if post.award %}
-              <br>
-              <span style="color: red; "> <strong>{{post.award}}</strong></span>
-              {% endif %}
-              <br>
-              {% if post.arxiv %}
-              <a href="{{post.arxiv}}">arxiv</a> /
-              {% endif %}
-              {% if post.video %}
-              <a href="{{post.video}}">video</a> /
-              {% endif %}
-              {% if post.code %}
-              <a href="{{post.code}}">code</a> /
+              {% if post.pdf %}
+              <a href="{{post.pdf}}">paper</a> /
               {% endif %}
               {% if post.poster %}
               <a href="{{post.poster}}">poster</a> /
               {% endif %}
+              {% if post.code %}
+              <a href="{{post.code}}">code</a> /
+              {% endif %}
               {% if post.slides %}
               <a href="{{post.slides}}">slides</a> /
               {% endif %}
-              {% if post.website %}
-              <a href="{{post.website}}">website</a> /
-              {% endif %}
-              {% if post.youtube %}
-              <a href="{{post.youtube}}">youtube</a> /
+              <br>
+              <em>{{post.venue}}</em>
+              {% if post.award %}
+              <br>
+              <span style="color: red; "> <strong>{{post.award}}</strong></span>
               {% endif %}
               <p></p>
               {{ post.excerpt }}

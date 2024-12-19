@@ -250,14 +250,17 @@
               <div style="margin-bottom: 10px;">
                 <h2>StarBugs</h2>
               </div>
-              A selective list of zero-day vulnerabilities I have discovered in the past.
+              I have discovered many severe vulnerabilities in popular open-source software (20+ CVEs in repositories with >1,000 stars on GitHub), as well as in products maintained by companies including Google and Meta.
+              A selective list of them is shown below. 
               <table style="width:100%;table-layout:auto;">
                 {% for vuln in site.data.vulns %}
+                {% if vuln.selected %}
                 <tr>
                   <td><a href="{{ vuln.link }}">{{ vuln.cve }}</a></td>
                   <td><a href="{{ vuln.product_link }}">{{ vuln.product }}</a></td>
                   <td>{{ vuln.type }}</td>
                 </tr>
+                {% endif %}
                 {% endfor %}
               </table>
             </td>

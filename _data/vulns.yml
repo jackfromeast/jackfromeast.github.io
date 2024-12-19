@@ -3,33 +3,165 @@
   product: "Jupyter Notebook/JupyterLab"
   product_link: "https://jupyter.org/"
   type: "Stored XSS"
-  select: true
+  selected: true
 
 - cve: "CVE-2024-38354"
   link: "https://github.com/hackmdio/codimd/security/advisories/GHSA-22jv-vch8-2vp9"
   product: "Hackmd.io"
   product_link: "https://hackmd.io/"
   type: "Stored XSS"
-  select: true
+  selected: true
 
 - cve: "CVE-2024-49362"
   link: "https://github.com/laurent22/joplin/security/advisories/GHSA-hff8-hjwv-j9q7"
   product: "joplin (Electron App)"
   product_link: "https://github.com/laurent22/joplin"
   type: "RCE"
-  select: true
+  selected: true
 
 - cve: "CVE-2024-43788"
   link: "https://github.com/advisories/GHSA-4vvj-4cpr-p986"
   product: "Webpack"
   product_link: "https://webpack.js.org/"
   type: "DOM Clobbering"
-  select: true
+  selected: true
 
 - cve: "CVE-2024-47885"
   link: "https://github.com/withastro/astro/security/advisories/GHSA-m85w-3h95-hcf9"
   product: "Astro"
   product_link: "https://astro.build/"
   type: "DOM Clobbering"
-  select: true
+  selected: true
 
+- cve: "CVE-2024-41669"
+  product: "Cocalc"
+  link: "/"
+  product_link: "https://cocalc.com/"
+  type: "XSS"
+  selected: false
+
+- cve: "CVE-2024-10457"
+  product: "AutoGPT"
+  link: "https://huntr.com/bounties/1d91e1e1-7d45-4bda-bc27-bfe9052fd975"
+  product_link: "https://agpt.co/"
+  type: "SSRF"
+  selected: false
+
+- cve: "CVE-2024-12029"
+  product: "InvokeAI"
+  link: "https://huntr.com/bounties/9b790f94-1b1b-4071-bc27-78445d1a87a3"
+  product_link: "https://invoke-ai.github.io/InvokeAI/"
+  type: "Python Deserialization"
+  selected: false
+
+- cve: "CVE-2024-48738"
+  product: "Typlog"
+  link: "/"
+  product_link: "https://typlog.com/"
+  type: "XSS"
+  selected: false
+
+- cve: "CVE-2024-53391"
+  product: "pace-js"
+  link: "https://github.com/CodeByZach/pace/issues/546"
+  product_link: "https://github.com/CodeByZach/pace"
+  type: "Prototype Pollution"
+  selected: false
+
+- cve: "CVE-2024-45389"
+  product: "Pagefind"
+  link: "/"
+  product_link: "https://pagefind.app/"
+  type: "DOM Clobbering"
+  selected: false
+
+- cve: "CVE-2024-45812"
+  product: "Vite"
+  link: "/"
+  product_link: "https://vitejs.dev/"
+  type: "DOM Clobbering"
+  selected: false
+
+- cve: "CVE-2024-47068"
+  product: "Rollup"
+  link: "/"
+  product_link: "https://rollupjs.org/"
+  type: "DOM Clobbering"
+  selected: false
+
+- cve: "CVE-2024-47075"
+  product: "layui"
+  link: "/"
+  product_link: "https://www.layui.com/"
+  type: "DOM Clobbering"
+  selected: false
+
+- cve: "CVE-2024-45939"
+  product: "stealjs"
+  link: "/"
+  product_link: "https://stealjs.com/"
+  type: "DOM Clobbering"
+  selected: false
+
+- cve: "CVE-2024-49212"
+  product: "curl"
+  link: "/"
+  product_link: "https://curl.se/"
+  type: "DOM Clobbering"
+  selected: false
+
+- cve: "CVE-2024-49213"
+  product: "cusdis"
+  link: "/"
+  product_link: "https://cusdis.com/"
+  type: "DOM Clobbering"
+  selected: false
+
+- cve: "CVE-2024-51091"
+  product: "seajs"
+  link: "/"
+  product_link: "https://seajs.org/"
+  type: "DOM Clobbering"
+  selected: false
+
+- cve: "CVE-2024-53382"
+  product: "PrismJS"
+  link: "/"
+  product_link: "https://prismjs.com/"
+  type: "DOM Clobbering"
+  selected: false
+
+- cve: "CVE-2024-53384"
+  product: "tsup"
+  link: "/"
+  product_link: "https://tsup.dev/"
+  type: "DOM Clobbering"
+  selected: false
+
+- cve: "CVE-2024-53385"
+  product: "inspire.js"
+  link: "/"
+  product_link: "https://github.com/LeaVerou/inspire.js"
+  type: "DOM Clobbering"
+  selected: false
+
+- cve: "CVE-2024-53386"
+  product: "stage.js"
+  link: "/"
+  product_link: "https://github.com/piqnt/stage.js"   # Replace with real link if known
+  type: "DOM Clobbering"
+  selected: false
+
+- cve: "CVE-2024-53387"
+  product: "umeditor"
+  link: "/"
+  product_link: "https://github.com/fex-team/umeditor"  # Replace with real link if known
+  type: "DOM Clobbering"
+  selected: false
+
+- cve: "CVE-2024-53388"
+  product: "mavo"
+  link: "/"
+  product_link: "https://mavo.io/"
+  type: "DOM Clobbering"
+  selected: false

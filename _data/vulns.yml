@@ -1,0 +1,35 @@
+- cve: "CVE-2024-43805"
+  link: "https://github.com/advisories/GHSA-9q39-rmj3-p4r2"
+  product: "Jupyter Notebook/JupyterLab"
+  product_link: "https://jupyter.org/"
+  type: "Stored XSS"
+  select: true
+
+- cve: "CVE-2024-38354"
+  link: "https://github.com/hackmdio/codimd/security/advisories/GHSA-22jv-vch8-2vp9"
+  product: "Hackmd.io"
+  product_link: "https://hackmd.io/"
+  type: "Stored XSS"
+  select: true
+
+- cve: "CVE-2024-49362"
+  link: "https://github.com/laurent22/joplin/security/advisories/GHSA-hff8-hjwv-j9q7"
+  product: "joplin (Electron App)"
+  product_link: "https://github.com/laurent22/joplin"
+  type: "RCE"
+  select: true
+
+- cve: "CVE-2024-43788"
+  link: "https://github.com/advisories/GHSA-4vvj-4cpr-p986"
+  product: "Webpack"
+  product_link: "https://webpack.js.org/"
+  type: "DOM Clobbering"
+  select: true
+
+- cve: "CVE-2024-47885"
+  link: "https://github.com/withastro/astro/security/advisories/GHSA-m85w-3h95-hcf9"
+  product: "Astro"
+  product_link: "https://astro.build/"
+  type: "DOM Clobbering"
+  select: true
+

@@ -60,6 +60,13 @@
   product_link: "https://typlog.com/"
   type: "XSS"
   selected: false
+  
+- cve: "CVE-2025-0183"
+  product: "gpt_academic"
+  link: "https://huntr.com/bounties/53bced90-64a9-4ca2-8f2f-282c4ce84d1f"
+  product_link: "https://github.com/binary-husky/gpt_academic"
+  type: "XSS"
+  selected: false
 
 - cve: "CVE-2024-53391"
   product: "pace-js"

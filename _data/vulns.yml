@@ -172,3 +172,10 @@
   product_link: "https://mavo.io/"
   type: "DOM Clobbering"
   selected: false
+
+- cve: "CVE-2025-23042"
+  product: "Gradio"
+  link: "https://github.com/advisories/GHSA-j2jg-fq62-7c3h"
+  product_link: "https://gradio.app/"
+  type: "ACL Bypass"
+  selected: false

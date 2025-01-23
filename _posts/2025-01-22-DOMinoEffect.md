@@ -10,5 +10,5 @@ pdf: "/assets/DOMinoEffect.pdf"
 poster: "/"
 code: "/"
 slides: "/"
-features: "The research results in 19 CVEs including [Jupyter](https://github.com/advisories/GHSA-9q39-rmj3-p4r2), [Hackmd.io](https://github.com/hackmdio/codimd/security/advisories/GHSA-22jv-vch8-2vp9), [Webpack](https://github.com/advisories/GHSA-4vvj-4cpr-p986) and Google Client API Library which has been acknowledged by Google."
+features: "The research results in 19 CVEs including <a href=https://github.com/advisories/GHSA-9q39-rmj3-p4r2>Jupyter</a>, <a href=https://github.com/hackmdio/codimd/security/advisories/GHSA-22jv-vch8-2vp9>Hackmd.io</a>, <a href="https://github.com/advisories/GHSA-4vvj-4cpr-p986">Webpack</a> and Google Client API Library which has been acknowledged by Google."
 ---

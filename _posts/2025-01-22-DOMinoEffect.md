@@ -10,5 +10,5 @@ pdf: "/assets/DOMinoEffect.pdf"
 poster: "/"
 code: "/"
 slides: "/"
-features: ""
+# features: "Resulted in 19 CVEs, including Jupyter, Hackmd.io, Webpack, MathJax, Prism, and etc. with Google Client API Library (acknowledged by Google)."
 ---

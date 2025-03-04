@@ -7,7 +7,7 @@ categories: research
 author: "Zhengyu Liu"
 authors: "<strong>Zhengyu Liu</strong>, Haochen Su, Nannan Wang, Cheng Huang"
 venue: "EAI International Conference on Security and Privacy in Communication Networks (SecureComm), 2022"
-pdf: "/assets/cybercoref.pdf"
+pdf: "/assets/Cybercoref.pdf"
 poster: "/"
 code: "https://github.com/jackfromeast/CyberCoref"
 slides: "/"

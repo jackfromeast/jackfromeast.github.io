@@ -1,3 +1,10 @@
+- cve: "CVE-2025-24049"
+  link: "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-24049"
+  product: "Microsoft Azure CLI"
+  product_link: "https://learn.microsoft.com/en-us/cli/azure/what-is-azure-cli"
+  type: "RCE"
+  selected: true
+
 - cve: "CVE-2024-43805"
   link: "https://github.com/advisories/GHSA-9q39-rmj3-p4r2"
   product: "Jupyter Notebook/JupyterLab"

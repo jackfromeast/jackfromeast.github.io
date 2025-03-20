@@ -58,8 +58,8 @@
   product: "InvokeAI"
   link: "https://huntr.com/bounties/9b790f94-1b1b-4071-bc27-78445d1a87a3"
   product_link: "https://invoke-ai.github.io/InvokeAI/"
-  type: "Python Deserialization"
-  selected: false
+  type: "RCE"
+  selected: true
 
 - cve: "CVE-2024-48738"
   product: "Typlog"

@@ -10,5 +10,6 @@ pdf: "/assets/DOMinoEffect.pdf"
 poster: "/"
 code: "https://github.com/jackfromeast/TheHulk"
 slides: "/"
+features: "Artifact Badges: Artifacts Available, Artifacts Functional, Results Reproduced"
 # features: "Resulted in 19 CVEs, including Jupyter, Hackmd.io, Webpack, MathJax, Prism, and etc. with Google Client API Library (acknowledged by Google)."
 ---

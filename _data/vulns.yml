@@ -54,6 +54,13 @@
   type: "RCE (Deserialization)"
   selected: true
 
+- cve: "CVE-2025-30358"
+  link: "https://github.com/mesop-dev/mesop/security/advisories/GHSA-f3mf-hm6v-jfhh"
+  product: "Mesop"
+  product_link: "https://github.com/mesop-dev/mesop"
+  type: "DoS & Jailbreak"
+  selected: true
+
 - cve: "CVE-2024-43788"
   link: "https://github.com/advisories/GHSA-4vvj-4cpr-p986"
   product: "Webpack"

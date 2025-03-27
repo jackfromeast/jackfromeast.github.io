@@ -21,16 +21,9 @@
 
 - cve: "CVE-2024-49362"
   link: "https://github.com/laurent22/joplin/security/advisories/GHSA-hff8-hjwv-j9q7"
-  product: "joplin (Electron App)"
+  product: "Joplin"
   product_link: "https://github.com/laurent22/joplin"
   type: "RCE"
-  selected: true
-
-- cve: "CVE-2024-43788"
-  link: "https://github.com/advisories/GHSA-4vvj-4cpr-p986"
-  product: "Webpack"
-  product_link: "https://webpack.js.org/"
-  type: "DOM Clobbering"
   selected: true
 
 - cve: "CVE-2024-47885"
@@ -61,6 +54,12 @@
   type: "RCE (Deserialization)"
   selected: true
 
+- cve: "CVE-2024-43788"
+  link: "https://github.com/advisories/GHSA-4vvj-4cpr-p986"
+  product: "Webpack"
+  product_link: "https://webpack.js.org/"
+  type: "DOM Clobbering"
+  selected: true
 - cve: "CVE-2024-48738"
   product: "Typlog"
   link: "/"

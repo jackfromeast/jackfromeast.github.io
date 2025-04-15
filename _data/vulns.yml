@@ -5,6 +5,20 @@
   type: "RCE"
   selected: true
 
+- cve: "CVE-2025-30358"
+  link: "https://github.com/mesop-dev/mesop/security/advisories/GHSA-f3mf-hm6v-jfhh"
+  product: "Mesop"
+  product_link: "https://github.com/mesop-dev/mesop"
+  type: "DoS & Jailbreak"
+  selected: true
+
+- cve: "CVE-2025-30374"
+  link: "https://github.com/Avaiga/taipy/security/advisories/GHSA-43fp-jq2f-8jpr"
+  product: "Taipy"
+  product_link: "https://taipy.io/"
+  type: "DoS & Token Leakage"
+  selected: true
+
 - cve: "CVE-2024-43805"
   link: "https://github.com/advisories/GHSA-9q39-rmj3-p4r2"
   product: "Jupyter Notebook/JupyterLab"
@@ -52,20 +66,6 @@
   link: "https://huntr.com/bounties/9b790f94-1b1b-4071-bc27-78445d1a87a3"
   product_link: "https://invoke-ai.github.io/InvokeAI/"
   type: "RCE (Deserialization)"
-  selected: true
-
-- cve: "CVE-2025-30358"
-  link: "https://github.com/mesop-dev/mesop/security/advisories/GHSA-f3mf-hm6v-jfhh"
-  product: "Mesop"
-  product_link: "https://github.com/mesop-dev/mesop"
-  type: "DoS & Jailbreak"
-  selected: true
-
-- cve: "CVE-2025-30374"
-  link: "https://github.com/Avaiga/taipy/security/advisories/GHSA-43fp-jq2f-8jpr"
-  product: "Taipy"
-  product_link: "https://taipy.io/"
-  type: "DoS & Token Leakage"
   selected: true
 
 - cve: "CVE-2024-43788"

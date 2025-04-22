@@ -206,3 +206,31 @@
   product_link: "https://gradio.app/"
   type: "ACL Bypass"
   selected: false
+
+- cve: "CVE-2025-43930"
+  product: "hashview"
+  link: "/"
+  product_link: "https://github.com/hashview/hashview"
+  type: "Host Injection"
+  selected: false
+
+- cve: "CVE-2025-43931"
+  product: "flask-boilerplate"
+  link: "/"
+  product_link: "https://github.com/realpython/flask-boilerplate"
+  type: "Host Injection"
+  selected: false
+
+- cve: "CVE-2025-43932"
+  product: "JobCenter"
+  link: "/"
+  product_link: "https://github.com/guomaoqiu/JobCenter"
+  type: "Host Injection"
+  selected: false
+
+- cve: "CVE-2025-43933"
+  product: "fblog"
+  link: "/"
+  product_link: "https://github.com/ghost123gg/fblog"
+  type: "Host Injection"
+  selected: false

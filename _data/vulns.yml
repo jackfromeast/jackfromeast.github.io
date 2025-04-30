@@ -234,3 +234,10 @@
   product_link: "https://github.com/ghost123gg/fblog"
   type: "Host Injection"
   selected: false
+  
+- cve: "CVE-2025-3982"
+  product: "Sverchok"
+  link: "https://www.cve.org/CVERecord?id=CVE-2025-3982"
+  product_link: "https://github.com/nortikin/sverchok"
+  type: "Class Pollution"
+  selected: false

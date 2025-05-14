@@ -16,7 +16,7 @@
   link: "https://github.com/Avaiga/taipy/security/advisories/GHSA-43fp-jq2f-8jpr"
   product: "Taipy"
   product_link: "https://taipy.io/"
-  type: "DoS & Token Leakage"
+  type: "XSS & RCE"
   selected: true
 
 - cve: "CVE-2024-43805"

@@ -248,3 +248,24 @@
   product_link: "https://github.com/nortikin/sverchok"
   type: "Class Pollution"
   selected: false
+
+- cve: "CVE-2025-45347"
+  link: "https://gist.github.com/superboy-zjc/b3e9fea0cc85d03bdb5c8b38cc90becd"
+  product: "open-event-server"
+  product_link: "https://github.com/fossasia/open-event-server"
+  type: "Incorrect Access Control"
+  selected: false
+
+- cve: "CVE-2025-45348"
+  link: "https://gist.github.com/superboy-zjc/bc46e100a8bfc69dcdfbff2e8bee7edb"
+  product: "open-event-server"
+  product_link: "https://github.com/fossasia/open-event-server"
+  type: "Incorrect Access Control"
+  selected: false
+
+- cve: "CVE-2025-45349"
+  link: "https://gist.github.com/superboy-zjc/31ecea91b304b8dd9871ad507467ca61"
+  product: "open-event-server"
+  product_link: "https://github.com/fossasia/open-event-server"
+  type: "Incorrect Access Control"
+  selected: false

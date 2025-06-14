@@ -137,34 +137,34 @@
           {% for talk in site.talks %}
           <tr>
             <td style="padding:0% 2.5%;width:75%;vertical-align:middle">
-              {{post.title}}
+              {{talk.title}}
               <br>
-              {{post.authors}}
+              {{talk.authors}}
               <br>
-              {% if post.slides %}
+              {% if talk.slides %}
               <a href="{{post.slides}}">slides</a> /
               {% endif %}
-              {% if post.video %}
+              {% if talk.video %}
               <a href="{{post.video}}">video</a> /
               {% endif %}
               <br>
-              <em>{{post.venue}}</em>
+              <em>{{talk.venue}}</em>
               {% if post.award %}
               <br>
               <span style="display: flex; align-items: center;">
                 <span style="font-size: 0.8em; color: red; margin-right: 0.5em;">■</span>
-                <span style="color: red;"><strong>{{post.award}}</strong></span>
+                <span style="color: red;"><strong>{{talk.award}}</strong></span>
               </span>
               {% endif %}
-              {% if post.features %}
+              {% if talk.features %}
               <br>
               <span style="display: flex; align-items: center;">
                 <span style="font-size: 0.8em; color: red; margin-right: 0.5em;">■</span>
-                <span style="color: red;">{{post.features}}</span>
+                <span style="color: red;">{{talk.features}}</span>
               </span>
               {% endif %}
               <p></p>
-              {{ post.excerpt }}
+              {{ talk.excerpt }}
             </td>
           </tr>
           {% endfor %}

@@ -136,10 +136,10 @@
 
           {% for talk in site.talks %}
           <tr>
-            <td style="padding:0% 2.5%;width:75%;vertical-align:middle">
+            <td style="padding:1% 2.5%;width:75%;vertical-align:middle">
               {{talk.title}}
               <br>
-              {{talk.authors}}
+              <em>{{talk.venue}}</em>
               <br>
               {% if talk.slides %}
               <a href="{{talk.slides}}">slides</a> /
@@ -148,14 +148,6 @@
               <a href="{{talk.video}}">video</a> /
               {% endif %}
               <br>
-              <em>{{talk.venue}}</em>
-              {% if talk.award %}
-              <br>
-              <span style="display: flex; align-items: center;">
-                <span style="font-size: 0.8em; color: red; margin-right: 0.5em;">■</span>
-                <span style="color: red;"><strong>{{talk.award}}</strong></span>
-              </span>
-              {% endif %}
               {% if talk.features %}
               <br>
               <span style="display: flex; align-items: center;">
@@ -163,7 +155,6 @@
                 <span style="color: red;">{{talk.features}}</span>
               </span>
               {% endif %}
-              <p></p>
               {{ talk.excerpt }}
             </td>
           </tr>

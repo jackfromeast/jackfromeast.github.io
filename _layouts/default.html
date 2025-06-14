@@ -142,14 +142,14 @@
               {{talk.authors}}
               <br>
               {% if talk.slides %}
-              <a href="{{post.slides}}">slides</a> /
+              <a href="{{talk.slides}}">slides</a> /
               {% endif %}
               {% if talk.video %}
-              <a href="{{post.video}}">video</a> /
+              <a href="{{talk.video}}">video</a> /
               {% endif %}
               <br>
               <em>{{talk.venue}}</em>
-              {% if post.award %}
+              {% if talk.award %}
               <br>
               <span style="display: flex; align-items: center;">
                 <span style="font-size: 0.8em; color: red; margin-right: 0.5em;">■</span>

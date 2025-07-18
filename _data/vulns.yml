@@ -26,6 +26,13 @@
   type: "XSS & RCE"
   selected: true
 
+- cve: "CVE-2025-54063"
+  link: "https://github.com/CherryHQ/cherry-studio/security/advisories/GHSA-p6vw-w3p8-4g72"
+  product: "Cherry Studio"
+  product_link: "https://www.cherry-ai.com/"
+  type: "RCE"
+  selected: true
+
 - cve: "CVE-2024-43805"
   link: "https://github.com/advisories/GHSA-9q39-rmj3-p4r2"
   product: "Jupyter Notebook/JupyterLab"

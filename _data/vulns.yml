@@ -33,6 +33,13 @@
   type: "RCE"
   selected: true
 
+- cve: "CVE-2025-54374"
+  link: "https://github.com/mayneyao/eidos/security/advisories/GHSA-qhhm-56qp-xr2r"
+  product: "Eidos"
+  product_link: "https://github.com/mayneyao/eidos"
+  type: "RCE"
+  selected: true
+
 - cve: "CVE-2024-43805"
   link: "https://github.com/advisories/GHSA-9q39-rmj3-p4r2"
   product: "Jupyter Notebook/JupyterLab"

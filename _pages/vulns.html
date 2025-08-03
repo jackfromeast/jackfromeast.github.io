@@ -1,0 +1,33 @@
+---
+layout: content
+title: Vulnerability
+permalink: /vulns.html
+---
+
+<h2 style="margin-bottom: 24px;">Published CVEs</h2>
+
+<div style="margin-bottom: 32px; margin-top: 16px;">
+  <table style="width:100%;border-collapse:collapse;text-align:left;">
+    <thead>
+      <tr>
+        <th style="text-align:left; padding-bottom: 8px; font-size: 16px;">CVE ID</th>
+        <th style="text-align:left; padding-bottom: 8px; font-size: 16px;">Product</th>
+        <th style="text-align:left; padding-bottom: 8px; font-size: 16px;">Type</th>
+      </tr>
+    </thead>
+    
+    <tbody>
+      {% for vuln in site.data.vulns %}
+      <tr>
+        <td style="padding: 2px 0;">
+          <a href="{{ vuln.link }}" target="_blank">{{ vuln.cve }}</a>
+        </td>
+        <td style="padding: 2px 0;">
+          <a href="{{ vuln.product_link }}" target="_blank">{{ vuln.product }}</a>
+        </td>
+        <td style="padding: 2px 0;">{{ vuln.type }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>

@@ -9,7 +9,7 @@ venue: "<em>To appear in</em> the Proceedings of USENIX Security Symposium, 2025
 pdf: "/assets/DOMinoEffect.pdf"
 poster: "/"
 code: "https://github.com/jackfromeast/TheHulk"
-slides: "/"
+slides: "/assets/DOMinoEffect_Slides.pdf"
 features: "Artifact Badges: Artifacts Available, Artifacts Functional, Results Reproduced"
 # features: "Resulted in 19 CVEs, including Jupyter, Hackmd.io, Webpack, MathJax, Prism, and etc. with Google Client API Library (acknowledged by Google)."
 ---

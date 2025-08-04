@@ -61,6 +61,13 @@
   type: "RCE"
   selected: true
 
+- cve: "CVE-2025-8535"
+  link: "https://vuldb.com/?id.318665"
+  product: "NanoVault"
+  product_link: "https://github.com/cronoh/nanovault"
+  type: "RCE"
+  selected: false
+
 - cve: "CVE-2024-47885"
   link: "https://github.com/withastro/astro/security/advisories/GHSA-m85w-3h95-hcf9"
   product: "Astro"

@@ -1,3 +1,31 @@
+- cve: "CVE-2025-55204"
+  link: "https://github.com/staniel359/muffon/security/advisories/GHSA-gc3f-gqph-522q"
+  product: "Muffon"
+  product_link: "https://muffon.netlify.app/"
+  type: "RCE"
+  selected: false
+  
+- cve: "CVE-2025-58176"
+  link: "https://github.com/OpenAgentPlatform/Dive/security/advisories/GHSA-2r34-7pgx-vvrc"
+  product: "Dive"
+  product_link: "https://github.com/OpenAgentPlatform/Dive"
+  type: "RCE"
+  selected: false
+  
+- cve: "CVE-2025-58357"
+  link: "https://github.com/nanbingxyz/5ire/security/advisories/GHSA-8527-3cch-95gf"
+  product: "5ire"
+  product_link: "https://5ire.app/"
+  type: "RCE"
+  selected: false
+  
+- cve: "CVE-2025-55733"
+  link: "https://github.com/ThinkInAIXYZ/deepchat/security/advisories/GHSA-hqr4-4gfc-5p2j"
+  product: "DeepChat"
+  product_link: "https://deepchat.thinkinai.xyz/"
+  type: "RCE"
+  selected: false
+  
 - cve: "CVE-2025-5120"
   link: "https://huntr.com/bounties/63ab1cfe-b573-4cf5-a7d3-fb6c957e34b0"
   product: "HuggingFace Transformers & Smolagents"

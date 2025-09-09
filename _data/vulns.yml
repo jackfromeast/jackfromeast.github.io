@@ -1,3 +1,10 @@
+- cve: "CVE-2025-58766"
+  link: "https://github.com/dyad-sh/dyad/security/advisories/GHSA-7fxm-c5xx-7vpq"
+  product: "Dyad"
+  product_link: "https://www.dyad.sh/"
+  type: "RCE"
+  selected: false
+  
 - cve: "CVE-2025-55204"
   link: "https://github.com/staniel359/muffon/security/advisories/GHSA-gc3f-gqph-522q"
   product: "Muffon"

@@ -1,3 +1,10 @@
+- cve: "CVE-2025-59417"
+  link: "https://github.com/lobehub/lobe-chat/security/advisories/GHSA-m79r-r765-5f9j"
+  product: "Lobe Chat Desktop"
+  product_link: "https://lobechat.com/chat"
+  type: "RCE"
+  selected: false
+  
 - cve: "CVE-2025-58766"
   link: "https://github.com/dyad-sh/dyad/security/advisories/GHSA-7fxm-c5xx-7vpq"
   product: "Dyad"

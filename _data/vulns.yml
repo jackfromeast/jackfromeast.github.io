@@ -11,6 +11,13 @@
   product_link: "https://www.dyad.sh/"
   type: "RCE"
   selected: false
+
+- cve: "CVE-2025-64514"
+  link: "https://github.com/maotoumao/MusicFreeDesktop/security/advisories/GHSA-jwc3-q3jw-j65q"
+  product: "MusicFreeDesktop"
+  product_link: "https://musicfree.catcat.work/"
+  type: "RCE"
+  selected: false
   
 - cve: "CVE-2025-55204"
   link: "https://github.com/staniel359/muffon/security/advisories/GHSA-gc3f-gqph-522q"

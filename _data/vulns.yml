@@ -18,6 +18,13 @@
   product_link: "https://musicfree.catcat.work/"
   type: "RCE"
   selected: false
+
+- cve: "CVE-2025-44109"
+  link: "https://gist.github.com/Suuuuuzy/609c7b2e74a8cc16c8e0302a100b86e0"
+  product: "Pinokio"
+  product_link: "https://pinokio.co/"
+  type: "RCE"
+  selected: false
   
 - cve: "CVE-2025-55204"
   link: "https://github.com/staniel359/muffon/security/advisories/GHSA-gc3f-gqph-522q"

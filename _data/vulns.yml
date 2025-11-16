@@ -12,6 +12,13 @@
   type: "RCE"
   selected: false
 
+- cve: "CVE-2025-54063"
+  link: "https://gist.github.com/Suuuuuzy/1dfb1cac0037c609e0a07de31e92d0bd"
+  product: "Paperlib"
+  product_link: "https://paperlib.app/en/"
+  type: "RCE"
+  selected: false
+  
 - cve: "CVE-2025-64514"
   link: "https://github.com/maotoumao/MusicFreeDesktop/security/advisories/GHSA-jwc3-q3jw-j65q"
   product: "MusicFreeDesktop"

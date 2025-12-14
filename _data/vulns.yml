@@ -12,6 +12,13 @@
   type: "RCE"
   selected: false
 
+- cve: "CVE-2025-67714"
+  link: "https://github.com/edrlab/thorium-reader/security/advisories/GHSA-3953-2fc4-qqxp"
+  product: "Thorium Reader"
+  product_link: "https://www.edrlab.org/software/thorium-reader/"
+  type: "RCE"
+  selected: false
+  
 - cve: "CVE-2025-54063"
   link: "https://gist.github.com/Suuuuuzy/1dfb1cac0037c609e0a07de31e92d0bd"
   product: "Paperlib"

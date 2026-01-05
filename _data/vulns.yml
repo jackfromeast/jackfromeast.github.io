@@ -18,7 +18,14 @@
   product_link: "https://www.edrlab.org/software/thorium-reader/"
   type: "RCE"
   selected: false
-  
+
+- cve: "CVE-2026-21853"
+  link: "https://github.com/toeverything/AFFiNE/security/advisories/GHSA-67vm-2mcj-8965"
+  product: "AFFiNE"
+  product_link: "https://affine.pro/"
+  type: "RCE"
+  selected: false
+
 - cve: "CVE-2025-54063"
   link: "https://gist.github.com/Suuuuuzy/1dfb1cac0037c609e0a07de31e92d0bd"
   product: "Paperlib"

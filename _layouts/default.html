@@ -133,7 +133,9 @@
         </table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;font:15px">
 
-          {% for talk in site.talks %}
+          {% assign sorted_talks = site.talks | sort: "date" | reverse %}
+          {% for talk in sorted_talks %}
+            {% if talk.role == "Speaker" %}
           <tr>
             <td style="padding:0.5% 2.5%;width:75%;vertical-align:middle">
               {{talk.title}}
@@ -157,6 +159,34 @@
               {{ talk.excerpt }}
             </td>
           </tr>
+            {% endif %}
+          {% endfor %}
+          {% for talk in sorted_talks %}
+            {% if talk.role == "Contributor" %}
+          <tr>
+            <td style="padding:0.5% 2.5%;width:75%;vertical-align:middle">
+              {{talk.title}}
+              <br>
+              {{talk.role}}, <em>{{talk.venue}}</em>
+              <br>
+              {% if talk.slides %}
+              <a href="{{talk.slides}}">slides</a> /
+              {% endif %}
+              {% if talk.video %}
+              <a href="{{talk.video}}">video</a> /
+              {% endif %}
+              <br>
+              {% if talk.features %}
+              <br>
+              <span style="display: flex; align-items: center;">
+                <span style="font-size: 0.8em; margin-right: 0.5em;">■</span>
+                <span>{{talk.features}}</span>
+              </span>
+              {% endif %}
+              {{ talk.excerpt }}
+            </td>
+          </tr>
+            {% endif %}
           {% endfor %}
         </table>
 

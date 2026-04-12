@@ -1,3 +1,10 @@
+- cve: "CVE-2026-27952"
+  link: "https://github.com/Agenta-AI/agenta/security/advisories/GHSA-pmgp-2m3v-34mq"
+  product: "Agenta"
+  product_link: "https://agenta.ai/"
+  type: "RCE"
+  selected: false
+  
 - cve: "CVE-2025-59417"
   link: "https://github.com/lobehub/lobe-chat/security/advisories/GHSA-m79r-r765-5f9j"
   product: "Lobe Chat Desktop"

@@ -1,3 +1,11 @@
+- cve: "GHSA-g485-8j3v-p6x8"
+  link: "https://github.com/tdurieux/anonymous_github/security/advisories/GHSA-g485-8j3v-p6x8"
+  product: "Anonymous GitHub"
+  product_link: "https://anonymous.4open.science/dashboard"
+  type: "XSS"
+  selected: true
+  
+
 - cve: "CVE-2026-27952"
   link: "https://github.com/Agenta-AI/agenta/security/advisories/GHSA-pmgp-2m3v-34mq"
   product: "Agenta"

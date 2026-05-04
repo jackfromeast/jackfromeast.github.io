@@ -31,10 +31,12 @@
 </head>
 
 <body>
+
+
   <table style="width:100%;max-width:860px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tr style="padding:0px">
       <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <table id="about" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr style="padding:0px">
             <td style="padding:2.5%;width:67%;vertical-align:middle">
               <h1>
@@ -44,13 +46,10 @@
                 I am currently a third-year Ph.D. student in Computer Science at <a href="https://www.jhu.edu/">Johns Hopkins University</a>, advised by <a href="https://yinzhicao.org">Prof. Yinzhi Cao</a>. Before joining JHU, I received my bachelor's degree in Cybersecurity from <a href="https://scu.edu.cn/">Sichuan University</a>. During my undergrad, I was very fortunate to be advised by <a href="https://www.chenghuang.org/">Prof. Cheng Huang</a>.
               </p>
               <p>
-                My research interests lie in Web Security and Software Security, especially leveraging program analysis approaches to detect/exploit/patch vulnerabilities in real-world complex applications and systems.
+                My research interests broadly lie in Web Security, Software Security, and AI Security. I study emerging vulnerability classes and develop automated techniques, based on program analysis and LLMs, to detect and exploit them at scale across real-world systems.
               </p>
               <p>
                 Besides, I am a CTF pwn&web player. I lead the team Z0D1AC (JHU academic team) and is a member of <a href="https://www.thehackerscrew.team/members">thehackerscrew</a> (international team, Top 10 on <a href="https://ctftime.org/">CTFTime.org</a>). 
-              </p>
-              <p>
-              <strong>[New!!]</strong> Excited to share that I’ll be presenting at BSidesSF on the <a href="https://bsidessf2026.sched.com/event/2E1f5/not-my-vibe-when-ai-coding-agents-go-off-the-rails" target="_blank" rel="noopener noreferrer">(in)security of AI coding agents</a> and at <a href="https://path.rsaconference.com/flow/rsac/us26/FullAgenda/page/catalog/session/1770658242033001WpEi" target="_blank" rel="noopener noreferrer">RSAC 2026</a> on my <a href="https://path.rsaconference.com/flow/rsac/us26/FullAgenda/page/catalog/session/1770658242033001WpEi" target="_blank" rel="noopener noreferrer">DOM clobbering research</a>. See you in San Francisco, and feel free to check out the talks!
               </p>
                 <!-- <p>
                 I played with team <a href="https://www.mccormick.northwestern.edu/computer-science/news-events/news/articles/2024/safeguarding-critical-software-infrastructure-through-novel-ai-systems.html">42-b3yond-6ug</a> in the <a href="https://aicyberchallenge.com/">AIxCC</a> competition, where we were awarded $2 million and advanced to the final competition (Top 7) in August 2025.
@@ -73,7 +72,37 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Publications</h2>
+              <div id="news" style="margin-bottom: 10px;">
+                <h2>News</h2>
+              </div>
+              <table style="border:none;border-collapse:collapse;width:100%;">
+                <tr>
+                  <td style="border:none;padding:3px 8px 3px 0;vertical-align:top;white-space:nowrap;"><img src="images/new.gif" alt="new"></td>
+                  <td style="border:none;padding:3px 0;vertical-align:top;">Two papers accepted to IEEE S&P (Oakland) 2026 on <a href="/assets/Pyrl.pdf">Python Class Pollution</a> and Host Name Poisoning. See you in San Francisco at S&P!</td>
+                </tr>
+                <tr>
+                  <td style="border:none;padding:3px 8px 3px 0;vertical-align:top;white-space:nowrap;"><img src="images/new.gif" alt="new"></td>
+                  <td style="border:none;padding:3px 0;vertical-align:top;">Presenting at <a href="https://bsidessf2026.sched.com/event/2E1f5/not-my-vibe-when-ai-coding-agents-go-off-the-rails" target="_blank" rel="noopener noreferrer">BSidesSF</a> on the (in)security of AI coding agents and at <a href="https://path.rsaconference.com/flow/rsac/us26/FullAgenda/page/catalog/session/1770658242033001WpEi" target="_blank" rel="noopener noreferrer">RSAC 2026</a> on my DOM clobbering research. See you in San Francisco in March!</td>
+                </tr>
+                <tr>
+                  <td style="border:none;padding:3px 8px 3px 0;vertical-align:top;white-space:nowrap;"><img src="images/new.gif" alt="new"></td>
+                  <td style="border:none;padding:3px 0;vertical-align:top;">Team <a href="https://www.amazon.science/nova-ai-challenge/teams/jayl-break" target="_blank" rel="noopener noreferrer">Jayl-Break</a> was selected as one of ten teams for the <a href="https://www.amazon.science/nova-ai-challenge" target="_blank" rel="noopener noreferrer">Amazon Nova AI Challenge</a>, receiving a $250,000 research grant to explore next-generation AI-driven penetration testing systems for web applications. I serve as the team lead.</td>
+                </tr>
+                <tr>
+                  <td style="border:none;padding:3px 8px 3px 0;vertical-align:top;white-space:nowrap;"><img src="images/new.gif" alt="new"></td>
+                  <td style="border:none;padding:3px 0;vertical-align:top;">Our paper on <a href="/assets/DOMinoEffect.pdf">DOM Clobbering</a> is accepted to USENIX Security 2025 with Honorable Mentions.</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:2.5% 2.5% 0 2.5%;width:100%;vertical-align:middle">
+              <div id="publications" style="margin-bottom: 10px;">
+                <h2>Publications</h2>
+              </div>
             </td>
           </tr>
         </table>
@@ -83,7 +112,7 @@
           {% for cat in post.categories %}
           {% if cat == 'research' %}
           <tr>
-            <td style="padding:0% 2.5%;width:75%;vertical-align:middle">
+            <td style="padding:0.5% 2.5%;width:75%;vertical-align:middle">
               <h3>{{post.title}}</h3>
               <br>
               {{post.authors}}
@@ -126,8 +155,10 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Talks</h2>
+            <td style="padding:2.5% 2.5% 0 2.5%;width:100%;vertical-align:middle">
+              <div id="talks" style="margin-bottom: 10px;">
+                <h2>Talks</h2>
+              </div>
             </td>
           </tr>
         </table>
@@ -199,7 +230,7 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle;">
-              <div style="margin-bottom: 10px;">
+              <div id="ctf" style="margin-bottom: 10px; margin-top: 15px;">
                 <h2>Capture The Flags</h2>
               </div>
               <table style="width:100%;table-layout:auto;">
@@ -226,7 +257,7 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <div style="margin-bottom: 10px;">
+              <div id="awards" style="margin-bottom: 10px;">
                 <h2>Selected Honors & Awards</h2>
               </div>
               <table style="width:100%;table-layout:auto;">
@@ -281,7 +312,7 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <div style="margin-bottom: 10px;">
+              <div id="services" style="margin-bottom: 10px;">
                 <h2>Professional Services</h2>
               </div>
               <div>
@@ -318,7 +349,7 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <div style="margin-bottom: 10px;">
+              <div id="experiences" style="margin-bottom: 10px;">
                 <h2>Experiences</h2>
               </div>
               <table style="width:100%;table-layout:auto;">
@@ -350,7 +381,7 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <div style="margin-bottom: 10px;">
+              <div id="cves" style="margin-bottom: 10px;">
                 <h2>StarBugs</h2>
               </div>
               <p style="margin-right: 5%;">

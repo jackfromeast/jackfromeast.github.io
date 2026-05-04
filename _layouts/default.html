@@ -21,9 +21,14 @@
 
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,500,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
     a, p, h3, td, tr, strong {
       font-size: 16px;
     }
@@ -31,10 +36,22 @@
 </head>
 
 <body>
-  <table style="width:100%;max-width:860px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <div class="page-wrapper">
+    <nav class="side-nav">
+      <a href="#about">About</a>
+      <a href="#news">News</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#talks">Talks</a>
+      <a href="#cves">CVEs</a>
+      <a href="#awards">Awards</a>
+      <a href="#services">Services</a>
+    </nav>
+    <div class="main-content">
+    <table style="width:100%;max-width:880px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tr style="padding:0px">
       <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <table id="about" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr style="padding:0px">
             <td style="padding:2.5%;width:67%;vertical-align:middle">
               <h1>
@@ -44,35 +61,93 @@
                 I am currently a third-year Ph.D. student in Computer Science at <a href="https://www.jhu.edu/">Johns Hopkins University</a>, advised by <a href="https://yinzhicao.org">Prof. Yinzhi Cao</a>. Before joining JHU, I received my bachelor's degree in Cybersecurity from <a href="https://scu.edu.cn/">Sichuan University</a>. During my undergrad, I was very fortunate to be advised by <a href="https://www.chenghuang.org/">Prof. Cheng Huang</a>.
               </p>
               <p>
-                My research interests lie in Web Security and Software Security, especially leveraging program analysis approaches to detect/exploit/patch vulnerabilities in real-world complex applications and systems.
+                My research interests broadly lie in Web Security, Software Security, and AI Security. I study emerging vulnerability classes and develop automated techniques, based on program analysis and LLMs, to detect and exploit them at scale across real-world systems.
               </p>
               <p>
-                Besides, I am a CTF pwn&web player. I lead the team Z0D1AC (JHU academic team) and is a member of <a href="https://www.thehackerscrew.team/members">thehackerscrew</a> (international team, Top 10 on <a href="https://ctftime.org/">CTFTime.org</a>). 
+                Besides, I am a CTF pwn&web player. I lead the team Z0D1AC (JHU academic team) and is a member of <a href="https://www.thehackerscrew.team/members">thehackerscrew</a> (international team, Top 10 on <a href="https://ctftime.org/">CTFTime.org</a>).
               </p>
-              <p>
-              <strong>[New!!]</strong> Excited to share that I’ll be presenting at BSidesSF on the <a href="https://bsidessf2026.sched.com/event/2E1f5/not-my-vibe-when-ai-coding-agents-go-off-the-rails" target="_blank" rel="noopener noreferrer">(in)security of AI coding agents</a> and at <a href="https://path.rsaconference.com/flow/rsac/us26/FullAgenda/page/catalog/session/1770658242033001WpEi" target="_blank" rel="noopener noreferrer">RSAC 2026</a> on my <a href="https://path.rsaconference.com/flow/rsac/us26/FullAgenda/page/catalog/session/1770658242033001WpEi" target="_blank" rel="noopener noreferrer">DOM clobbering research</a>. See you in San Francisco, and feel free to check out the talks!
-              </p>
-                <!-- <p>
-                I played with team <a href="https://www.mccormick.northwestern.edu/computer-science/news-events/news/articles/2024/safeguarding-critical-software-infrastructure-through-novel-ai-systems.html">42-b3yond-6ug</a> in the <a href="https://aicyberchallenge.com/">AIxCC</a> competition, where we were awarded $2 million and advanced to the final competition (Top 7) in August 2025.
-              </p>-->
-              <p style="text-align:center">
-                <a href="https://mailhide.io/e/zmIXSlvn" onclick="popup=window.open('https://mailhide.io/e/zmIXSlvn','mailhidepopup','width=580,height=635'); return false;">Email</a>&nbsp;/&nbsp;
-                <a target="https://github.com/jackfromeast" href="https://github.com/jackfromeast">GitHub</a> &nbsp;/&nbsp;
-                <a target="https://jackfromeast.site" href="https://jackfromeast.site">Blog</a> &nbsp;/&nbsp;
-                <a target="https://jackfromeast.github.io/assets/CV_Zhengyu_Liu.pdf" href="https://jackfromeast.github.io/assets/CV_Zhengyu_Liu.pdf">CV</a> &nbsp;/&nbsp;
-                <a target="https://scholar.google.com/citations?user=i8s4fWgAAAAJ&hl=zh-CN&oi=sra" href="https://scholar.google.com/citations?user=i8s4fWgAAAAJ&hl=zh-CN&oi=sra"> Google Scholar </a> &nbsp;/&nbsp
-                <a target="https://www.linkedin.com/in/zhengyu-liu-363b5121b/" href="https://www.linkedin.com/in/zhengyu-liu-363b5121b/"> Linkedin </a>
+              <p style="text-align:center" class="social-links">
+                <a href="https://mailhide.io/e/zmIXSlvn" onclick="popup=window.open('https://mailhide.io/e/zmIXSlvn','mailhidepopup','width=580,height=635'); return false;"><i class="fas fa-envelope"></i> Email</a>&nbsp;/&nbsp;
+                <a href="https://github.com/jackfromeast" target="_blank"><i class="fab fa-github"></i> GitHub</a>&nbsp;/&nbsp;
+                <a href="https://jackfromeast.site" target="_blank"><i class="fas fa-blog"></i> Blog</a>&nbsp;/&nbsp;
+                <a href="https://jackfromeast.github.io/assets/CV_Zhengyu_Liu.pdf" target="_blank"><i class="fas fa-file-pdf"></i> CV</a>&nbsp;/&nbsp;
+                <a href="https://scholar.google.com/citations?user=i8s4fWgAAAAJ&hl=zh-CN&oi=sra" target="_blank"><i class="ai ai-google-scholar"></i> Scholar</a>&nbsp;/&nbsp;
+                <a href="https://www.linkedin.com/in/zhengyu-liu-363b5121b/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
-              <img style="width:100%;max-width:100%" alt="profile photo" src="images/IMG_9657.jpg">
+              <img style="width:100%;max-width:100%;border-radius:10px;" alt="profile photo" src="images/IMG_9657.jpg">
+            </td>
+          </tr>
+        </table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-top:-15px;">
+          <tr>
+            <td id="news" style="padding:2.5%;width:100%;vertical-align:middle">
+              <h2>News</h2>
+              <table class="news-table" style="border:none;">
+                <tr>
+                  <td class="news-date"><img src="images/new.gif" alt="new"> [May 2026]</td>
+                  <td>Two papers accepted to IEEE S&P (Oakland) 2026 on <a href="/assets/Pyrl.pdf">Python Class Pollution</a> and Host Name Poisoning.</td>
+                </tr>
+                <tr>
+                  <td class="news-date"><img src="images/new.gif" alt="new"> [Mar 2026]</td>
+                  <td>Presenting at <a href="https://bsidessf2026.sched.com/event/2E1f5/not-my-vibe-when-ai-coding-agents-go-off-the-rails" target="_blank" rel="noopener noreferrer">BSidesSF</a> on the (in)security of AI coding agents and at <a href="https://path.rsaconference.com/flow/rsac/us26/FullAgenda/page/catalog/session/1770658242033001WpEi" target="_blank" rel="noopener noreferrer">RSAC 2026</a> on my DOM clobbering research. See you in San Francisco!</td>
+                </tr>
+                <tr>
+                  <td class="news-date"><img src="images/new.gif" alt="new"> [Feb 2026]</td>
+                  <td>Team <a href="https://www.amazon.science/nova-ai-challenge/teams/jayl-break" target="_blank" rel="noopener noreferrer">Jayl-Break</a> was selected as one of ten teams for the <a href="https://www.amazon.science/nova-ai-challenge" target="_blank" rel="noopener noreferrer">Amazon Nova AI Challenge</a>, receiving a $250,000 research grant to explore next-generation AI-driven penetration testing systems for web applications. I serve as the team lead.</td>
+                </tr>
+                <tr>
+                  <td class="news-date"><img src="images/new.gif" alt="new"> [Aug 2025]</td>
+                  <td>Our paper on <a href="/assets/DOMinoEffect.pdf">DOM Clobbering</a> is accepted to USENIX Security 2025 with Honorable Mentions.</td>
+                </tr>
+              </table>
             </td>
           </tr>
         </table>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
+            <td id="research" style="padding:2.5%;width:100%;vertical-align:middle">
+              <h2>Research Directions</h2>
+
+              <h3>Systematic Vulnerability Study</h3>
+              <p>
+                Modern software ecosystems are built on dynamically-typed languages whose core abstractions -- prototypes, classes, DOMs -- are themselves attack surfaces. I systematically define and study emerging vulnerability classes at scale, turning ad-hoc findings into well-understood, measurable security problems.
+              </p>
+              <ul>
+                <li>Prototype pollution gadgets in Node.js template engines [<a href="/assets/UoPF.pdf">S&P '24</a>]</li>
+                <li>Client-side prototype pollution gadgets across one million websites [<a href="/assets/FollowMyFlow.pdf">S&P '25</a>]</li>
+                <li>DOM clobbering gadget discovery and exploitation [<a href="/assets/DOMinoEffect.pdf">USENIX Sec '25</a>]</li>
+                <li>First large-scale systematic study of Python class pollution [<a href="/assets/Pyrl.pdf">S&P '26</a>]</li>
+                <li>Host name poisoning in web applications [S&P '26]</li>
+              </ul>
+
+              <h3>Automated Program Analysis for Security</h3>
+              <p>
+                I build program analysis tools -- concolic execution, taint analysis, and gadget chain detection -- to automatically discover and chain vulnerability primitives in complex, real-world codebases. This work has resulted in <a href="https://github.com/jackfromeast/jackfromeast.github.io/blob/master/_data/vulns.yml">50+ CVEs</a> across products from Google, Microsoft, Meta, Vercel, and others.
+              </p>
+              <ul>
+                <li>Concolic execution with symbolic DOM for DOM clobbering [<a href="/assets/DOMinoEffect.pdf">USENIX Sec '25</a>]</li>
+                <li>Taint analysis for prototype pollution gadget chains [<a href="/assets/UoPF.pdf">S&P '24</a>]</li>
+                <li>Large-scale dynamic analysis for client-side web vulnerabilities [<a href="/assets/FollowMyFlow.pdf">S&P '25</a>]</li>
+              </ul>
+
+              <h3>LLM Agent Red-Teaming</h3>
+              <p>
+                As LLM-powered coding agents become critical development infrastructure, I study their security boundaries -- uncovering how these agents can be manipulated, misused, or exploited, and developing principled approaches for red-teaming them.
+              </p>
+              <ul>
+                <li>Security of AI coding agents [<a href="https://bsidessf2026.sched.com/event/2E1f5/not-my-vibe-when-ai-coding-agents-go-off-the-rails" target="_blank" rel="noopener noreferrer">BSidesSF '26</a>, <a href="https://path.rsaconference.com/flow/rsac/us26/FullAgenda/page/catalog/session/1770658242033001WpEi" target="_blank" rel="noopener noreferrer">RSAC '26</a>]</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td id="publications" style="padding:2.5%;width:100%;vertical-align:middle">
               <h2>Publications</h2>
             </td>
           </tr>
@@ -126,7 +201,7 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
+            <td id="talks" style="padding:2.5%;width:100%;vertical-align:middle">
               <h2>Talks</h2>
             </td>
           </tr>
@@ -199,7 +274,7 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle;">
-              <div style="margin-bottom: 10px;">
+              <div id="ctf" style="margin-bottom: 10px;">
                 <h2>Capture The Flags</h2>
               </div>
               <table style="width:100%;table-layout:auto;">
@@ -226,7 +301,7 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <div style="margin-bottom: 10px;">
+              <div id="awards" style="margin-bottom: 10px;">
                 <h2>Selected Honors & Awards</h2>
               </div>
               <table style="width:100%;table-layout:auto;">
@@ -281,7 +356,7 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <div style="margin-bottom: 10px;">
+              <div id="services" style="margin-bottom: 10px;">
                 <h2>Professional Services</h2>
               </div>
               <div>
@@ -350,7 +425,7 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <div style="margin-bottom: 10px;">
+              <div id="cves" style="margin-bottom: 10px;">
                 <h2>StarBugs</h2>
               </div>
               <p style="margin-right: 5%;">
@@ -385,6 +460,32 @@
       </td>
     </tr>
   </table>
+    </div>
+  </div>
+  <script>
+    (function() {
+      var navLinks = document.querySelectorAll('.side-nav a');
+      var sections = [];
+      navLinks.forEach(function(link) {
+        var id = link.getAttribute('href').substring(1);
+        var el = document.getElementById(id);
+        if (el) sections.push({ id: id, el: el, link: link });
+      });
+      function onScroll() {
+        var scrollY = window.scrollY + 200;
+        var current = sections[0];
+        for (var i = 0; i < sections.length; i++) {
+          if (sections[i].el.getBoundingClientRect().top + window.scrollY <= scrollY) {
+            current = sections[i];
+          }
+        }
+        navLinks.forEach(function(l) { l.classList.remove('active'); });
+        if (current) current.link.classList.add('active');
+      }
+      window.addEventListener('scroll', onScroll);
+      onScroll();
+    })();
+  </script>
 </body>
 
 </html>

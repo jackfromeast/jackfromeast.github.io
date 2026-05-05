@@ -33,8 +33,7 @@
 
 <body>
 
-
-  <table style="width:100%;max-width:860px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <table style="width:100%;max-width:840px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tr style="padding:0px">
       <td style="padding:0px">
         <table id="about" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
@@ -139,8 +138,6 @@
               </div>
             </td>
           </tr>
-        </table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;font:15px">
 
           {% for post in site.posts %}
           {% for cat in post.categories %}
@@ -195,8 +192,6 @@
               </div>
             </td>
           </tr>
-        </table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;font:15px">
 
           {% assign sorted_talks = site.talks | sort: "date" | reverse %}
           {% for talk in sorted_talks %}
@@ -264,7 +259,7 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle;">
-              <div id="ctf" style="margin-bottom: 10px; margin-top: 15px;">
+              <div id="ctf" style="margin-bottom: 10px;">
                 <h2>Capture The Flags</h2>
               </div>
               <table style="width:100%;table-layout:auto;">

@@ -44,9 +44,11 @@
       <a href="#research">Research</a>
       <a href="#publications">Publications</a>
       <a href="#talks">Talks</a>
-      <a href="#cves">CVEs</a>
       <a href="#awards">Awards</a>
       <a href="#services">Services</a>
+      <a href="#experiences">Experiences</a>
+      <a href="#ctf">CTFs</a>
+      <a href="#cves">StarBugs</a>
     </nav>
     <div class="main-content">
     <table style="width:100%;max-width:880px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
@@ -82,26 +84,28 @@
           </tr>
         </table>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-top:-15px;">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
-            <td id="news" style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>News</h2>
-              <table class="news-table" style="border:none;">
+            <td style="padding:10px 2.5% 15px 2.5%;width:100%;vertical-align:middle">
+              <div id="news" style="margin-bottom: 10px;">
+                <h2>News</h2>
+              </div>
+              <table style="border:none;border-collapse:collapse;width:100%;">
                 <tr>
-                  <td class="news-date"><img src="images/new.gif" alt="new"> [May 2026]</td>
-                  <td>Two papers accepted to IEEE S&P (Oakland) 2026 on <a href="/assets/Pyrl.pdf">Python Class Pollution</a> and Host Name Poisoning.</td>
+                  <td style="border:none;padding:3px 8px 3px 0;vertical-align:top;white-space:nowrap;"><img src="images/new.gif" alt="new"> <span style="color:#666;">May 2026</span></td>
+                  <td style="border:none;padding:3px 0;vertical-align:top;">Two papers accepted to IEEE S&P (Oakland) 2026. See you in San Francisco at S&P!</td>
                 </tr>
                 <tr>
-                  <td class="news-date"><img src="images/new.gif" alt="new"> [Mar 2026]</td>
-                  <td>Presenting at <a href="https://bsidessf2026.sched.com/event/2E1f5/not-my-vibe-when-ai-coding-agents-go-off-the-rails" target="_blank" rel="noopener noreferrer">BSidesSF</a> on the (in)security of AI coding agents and at <a href="https://path.rsaconference.com/flow/rsac/us26/FullAgenda/page/catalog/session/1770658242033001WpEi" target="_blank" rel="noopener noreferrer">RSAC 2026</a> on my DOM clobbering research. See you in San Francisco!</td>
+                  <td style="border:none;padding:3px 8px 3px 0;vertical-align:top;white-space:nowrap;"><img src="images/new.gif" alt="new"> <span style="color:#666;">Mar 2026</span></td>
+                  <td style="border:none;padding:3px 0;vertical-align:top;">Presenting at <a href="https://bsidessf2026.sched.com/event/2E1f5/not-my-vibe-when-ai-coding-agents-go-off-the-rails" target="_blank" rel="noopener noreferrer">BSidesSF 2026</a> on the (in)security of AI coding agents and at <a href="https://path.rsaconference.com/flow/rsac/us26/FullAgenda/page/catalog/session/1770658242033001WpEi" target="_blank" rel="noopener noreferrer">RSAC 2026</a> on my DOM clobbering research. See you in San Francisco in March!</td>
                 </tr>
                 <tr>
-                  <td class="news-date"><img src="images/new.gif" alt="new"> [Feb 2026]</td>
-                  <td>Team <a href="https://www.amazon.science/nova-ai-challenge/teams/jayl-break" target="_blank" rel="noopener noreferrer">Jayl-Break</a> was selected as one of ten teams for the <a href="https://www.amazon.science/nova-ai-challenge" target="_blank" rel="noopener noreferrer">Amazon Nova AI Challenge</a>, receiving a $250,000 research grant to explore next-generation AI-driven penetration testing systems for web applications. I serve as the team lead.</td>
+                  <td style="border:none;padding:3px 8px 3px 0;vertical-align:top;white-space:nowrap;"><img src="images/new.gif" alt="new"> <span style="color:#666;">Feb 2026</span></td>
+                  <td style="border:none;padding:3px 0;vertical-align:top;">Our Team <a href="https://www.amazon.science/nova-ai-challenge/teams/jayl-break" target="_blank" rel="noopener noreferrer">Jayl-Break</a> was selected as one of ten teams for the <a href="https://www.amazon.science/nova-ai-challenge" target="_blank" rel="noopener noreferrer">Amazon Nova AI Challenge 2026</a>, receiving a $250,000 research grant to explore next-generation AI-driven penetration testing systems for web applications. I serve as the team lead.</td>
                 </tr>
                 <tr>
-                  <td class="news-date"><img src="images/new.gif" alt="new"> [Aug 2025]</td>
-                  <td>Our paper on <a href="/assets/DOMinoEffect.pdf">DOM Clobbering</a> is accepted to USENIX Security 2025 with Honorable Mentions.</td>
+                  <td style="border:none;padding:3px 8px 3px 0;vertical-align:top;white-space:nowrap;"><img src="images/new.gif" alt="new"> <span style="color:#666;">Aug 2025</span></td>
+                  <td style="border:none;padding:3px 0;vertical-align:top;">Our paper on <a href="/assets/DOMinoEffect.pdf">DOM Clobbering</a> is accepted to USENIX Security 2025 with Honorable Mentions.</td>
                 </tr>
               </table>
             </td>
@@ -110,37 +114,31 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
-            <td id="research" style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Research Directions</h2>
-
-              <h3>Systematic Vulnerability Study</h3>
+            <td style="padding:15px 2.5% 0 2.5%;width:100%;vertical-align:middle">
+              <div id="research" style="margin-bottom: 10px;">
+                <h2>Research Directions</h2>
+              </div>
               <p>
-                Modern software ecosystems are built on dynamically-typed languages whose core abstractions -- prototypes, classes, DOMs -- are themselves attack surfaces. I systematically define and study emerging vulnerability classes at scale, turning ad-hoc findings into well-understood, measurable security problems.
+                I put my research efforts under two complementary research directions:
               </p>
-              <ul>
-                <li>Prototype pollution gadgets in Node.js template engines [<a href="/assets/UoPF.pdf">S&P '24</a>]</li>
-                <li>Client-side prototype pollution gadgets across one million websites [<a href="/assets/FollowMyFlow.pdf">S&P '25</a>]</li>
-                <li>DOM clobbering gadget discovery and exploitation [<a href="/assets/DOMinoEffect.pdf">USENIX Sec '25</a>]</li>
-                <li>First large-scale systematic study of Python class pollution [<a href="/assets/Pyrl.pdf">S&P '26</a>]</li>
-                <li>Host name poisoning in web applications [S&P '26]</li>
+              <p>
+                <strong>Systematic Vulnerability Study.</strong>
+                I study new and overlooked vulnerability classes in widely used software, including web applications, browsers, language runtimes, protocols, and AI-integrated systems. My work uncovers how these vulnerabilities arise, how attackers turn them into practical exploits, how widespread they are, and how they can be mitigated.
+              </p>
+              <ul style="margin-left: 0px;">
+                <li>Client-side and Server-side Web Vulnerabilities: [<a href="/assets/DOMinoEffect.pdf">Usenix '25</a>], [<a href="/assets/FollowMyFlow.pdf">S&P '25</a>], [<a href="/assets/Pyrl.pdf">S&P '26</a>]</li>
+                <li>Language and Runtime Security: [<a href="/assets/UoPF.pdf">S&P '24</a>], [<a href="/assets/Pyrl.pdf">S&P '26</a>]</li>
+                <li>Protocol and Integration Security: [<a href="https://www.blackhat.com/asia-26/">BHAsia '26</a>]</li>
+                <li>LLM and Agent Security: [<a href="https://bsidessf2026.sched.com/event/2E1f5/not-my-vibe-when-ai-coding-agents-go-off-the-rails">BSidesSF '26</a>]</li>
               </ul>
-
-              <h3>Automated Program Analysis for Security</h3>
               <p>
-                I build program analysis tools -- concolic execution, taint analysis, and gadget chain detection -- to automatically discover and chain vulnerability primitives in complex, real-world codebases. This work has resulted in <a href="https://github.com/jackfromeast/jackfromeast.github.io/blob/master/_data/vulns.yml">50+ CVEs</a> across products from Google, Microsoft, Meta, Vercel, and others.
+                <strong>Principled Security Analysis.</strong>
+                 I design principled, reliable, and scalable techniques for automated vulnerability detection, validation, exploit generation, and mitigation. My recent efforts focus on integrating traditional program analysis with LLM-based reasoning for fully automated red teaming.
               </p>
-              <ul>
-                <li>Concolic execution with symbolic DOM for DOM clobbering [<a href="/assets/DOMinoEffect.pdf">USENIX Sec '25</a>]</li>
-                <li>Taint analysis for prototype pollution gadget chains [<a href="/assets/UoPF.pdf">S&P '24</a>]</li>
-                <li>Large-scale dynamic analysis for client-side web vulnerabilities [<a href="/assets/FollowMyFlow.pdf">S&P '25</a>]</li>
-              </ul>
-
-              <h3>LLM Agent Red-Teaming</h3>
-              <p>
-                As LLM-powered coding agents become critical development infrastructure, I study their security boundaries -- uncovering how these agents can be manipulated, misused, or exploited, and developing principled approaches for red-teaming them.
-              </p>
-              <ul>
-                <li>Security of AI coding agents [<a href="https://bsidessf2026.sched.com/event/2E1f5/not-my-vibe-when-ai-coding-agents-go-off-the-rails" target="_blank" rel="noopener noreferrer">BSidesSF '26</a>, <a href="https://path.rsaconference.com/flow/rsac/us26/FullAgenda/page/catalog/session/1770658242033001WpEi" target="_blank" rel="noopener noreferrer">RSAC '26</a>]</li>
+              <ul style="margin-left: 0px;">
+                <li>Static and Dynamic Analysis: [<a href="/assets/UoPF.pdf">S&P '24</a>], [<a href="/assets/FollowMyFlow.pdf">S&P '25</a>], [<a href="/assets/DOMinoEffect.pdf">Usenix '25</a>], [<a href="/assets/Pyrl.pdf">S&P '26</a>]</li>
+                <li>Agentic Program Analysis: [<a href="https://bsidessf2026.sched.com/event/2E1f5/not-my-vibe-when-ai-coding-agents-go-off-the-rails">BSidesSF '26</a>]</li>
+                <li>LLM/AI Agent Red Teaming: [<a href="https://www.blackhat.com/asia-26/">BHAsia '26</a>]</li>
               </ul>
             </td>
           </tr>
@@ -148,8 +146,10 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
-            <td id="publications" style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Publications</h2>
+            <td style="padding:15px 2.5% 5px 2.5%;width:100%;vertical-align:middle">
+              <div id="publications">
+                <h2>Publications</h2>
+              </div>
             </td>
           </tr>
 
@@ -157,7 +157,7 @@
           {% for cat in post.categories %}
           {% if cat == 'research' %}
           <tr>
-            <td style="padding:0.5% 2.5%;width:75%;vertical-align:middle">
+            <td style="padding:0.5% 2.5%;width:75%;vertical-align:middle;line-height:1.2">
               <h3>{{post.title}}</h3>
               <br>
               {{post.authors}}
@@ -179,13 +179,13 @@
               {% if post.features %}
               <br>
               <span style="display: flex; align-items: center;">
-                <span style="font-size: 0.8em; margin-right: 0.5em;">■</span>
-                <span">{{post.features}}</span>
+                <span style="font-size: 0.8em; margin-right: 0.5em;">&#9632;</span>
+                <span>{{post.features}}</span>
               </span>
               {% endif %}
               {% if post.award %}
               <span style="display: flex; align-items: center;">
-                <span style="font-size: 0.8em; color: red; margin-right: 0.5em;">■</span>
+                <span style="font-size: 0.8em; color: red; margin-right: 0.5em;">&#9632;</span>
                 <span style="color: red;"><strong>{{post.award}}</strong></span>
               </span>
               {% endif %}
@@ -200,8 +200,10 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
-            <td id="talks" style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Talks</h2>
+            <td style="padding:15px 2.5% 5px 2.5%;width:100%;vertical-align:middle">
+              <div id="talks">
+                <h2>Talks</h2>
+              </div>
             </td>
           </tr>
 
@@ -209,7 +211,7 @@
           {% for talk in sorted_talks %}
             {% if talk.role == "Speaker" %}
           <tr>
-            <td style="padding:0.5% 2.5%;width:75%;vertical-align:middle">
+            <td style="padding:0.5% 2.5%;width:75%;vertical-align:middle;line-height:1.2">
               {{talk.title}}
               <br>
               {{talk.role}}, <em>{{talk.venue}}</em>
@@ -227,7 +229,7 @@
               {% if talk.features %}
               <br>
               <span style="display: flex; align-items: center;">
-                <span style="font-size: 0.8em; margin-right: 0.5em;">■</span>
+                <span style="font-size: 0.8em; margin-right: 0.5em;">&#9632;</span>
                 <span>{{talk.features}}</span>
               </span>
               {% endif %}
@@ -239,7 +241,7 @@
           {% for talk in sorted_talks %}
             {% if talk.role == "Contributor" %}
           <tr>
-            <td style="padding:0.5% 2.5%;width:75%;vertical-align:middle">
+            <td style="padding:0.5% 2.5%;width:75%;vertical-align:middle;line-height:1.2">
               {{talk.title}}
               <br>
               {{talk.role}}, <em>{{talk.venue}}</em>
@@ -257,7 +259,7 @@
               {% if talk.features %}
               <br>
               <span style="display: flex; align-items: center;">
-                <span style="font-size: 0.8em; margin-right: 0.5em;">■</span>
+                <span style="font-size: 0.8em; margin-right: 0.5em;">&#9632;</span>
                 <span>{{talk.features}}</span>
               </span>
               {% endif %}
@@ -270,34 +272,7 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle;">
-              <div id="ctf" style="margin-bottom: 10px;">
-                <h2>Capture The Flags</h2>
-              </div>
-              <table style="width:100%;table-layout:auto;">
-                <tr>
-                  <td style="white-space: nowrap; padding-bottom:10px;">Team member @ TheHackersCrew
-                    <br>
-                    <span style="font-weight:normal;">Won <strong>17</strong> medals for the year of 2024, <strong>7 <span style="color:gold">Gold</span> + 5 <span style="color:silver">Silver</span> + 5 <span style="color:burlywood">Bronze</span></strong></span>
-                  </td>
-                  <td style="text-align:right; padding-right:50px; vertical-align:top;"><em>2023 Jan. - Now</em></td>
-                </tr>
-                <tr>
-                  <td style="white-space: nowrap;">Co-lead @ The Group Z0D1AC
-                    <br>
-                    <span style="font-weight:normal;">Achieved 2nd place RaymondJamesCTF 2024 <strong>($5000 cash prize)</strong>,<br> 3rd place RaymondJamesCTF 2023 <strong>($2500 cash prize)</strong>, etc.</span>
-                  </td>
-                  <td style="text-align:right; padding-right:50px; vertical-align:top;"><em>2022 Oct. - Now</em></td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-        </table>
-
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
+            <td style="padding:30px 2.5% 15px 2.5%;width:100%;vertical-align:middle">
               <div id="awards" style="margin-bottom: 10px;">
                 <h2>Selected Honors & Awards</h2>
               </div>
@@ -342,27 +317,27 @@
                   <td style="text-align:right; padding-right:30px;"><em>2020 Sep.</em> &emsp;</td>
                 </tr>
                 <tr>
-                  <td>Third Prize (¥30,000), The 4th “Qiangwang Cup” National Cybersecurity Challenge</td>
+                  <td>Third Prize (¥30,000), The 4th "Qiangwang Cup" National Cybersecurity Challenge</td>
                   <td style="text-align:right; padding-right:30px;"><em>2020 Sep.</em> &emsp;</td>
                 </tr>
               </table>
             </td>
           </tr>
         </table>
-        
+
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
+            <td style="padding:15px 2.5% 15px 2.5%;width:100%;vertical-align:middle">
               <div id="services" style="margin-bottom: 10px;">
                 <h2>Professional Services</h2>
               </div>
-              <div>
+              <div class="services-list" style="line-height:1.2">
                 <p><strong>Program Committee</strong></p>
                 <ul style="margin-left: 0px;">
                   <li>ACM Asia Conference on Computer and Communications Security (ACM AsiaCCS '27)</li>
                   <li>The Third International Workshop on Large Language Models for Code (LLM4Code '26)</li>
                 </ul>
-                
+
                 <p><strong>External Reviewer</strong></p>
                 <ul style="margin-left: 0px;">
                   <li>IEEE Symposium on Security and Privacy (S&P '25, '26)</li>
@@ -375,7 +350,7 @@
                   <li>IEEE Computer Security Foundations Symposium (CSF '24)</li>
                   <li>Conference on Detection of Intrusions and Malware & Vulnerability Assessment (DIMVA '24)</li>
                 </ul>
-                
+
                 <p><strong>Artifact Evaluation Committee</strong></p>
                 <ul style="margin-left: 0px;">
                   <li>Network and Distributed System Security Symposium (NDSS '26)</li>
@@ -386,10 +361,10 @@
             </td>
           </tr>
         </table>
-        
+
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
+            <td style="padding:5px 2.5% 15px 2.5%;width:100%;vertical-align:middle">
               <div id="experiences" style="margin-bottom: 10px;">
                 <h2>Experiences</h2>
               </div>
@@ -421,7 +396,33 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
+            <td style="padding:15px 2.5% 15px 2.5%;width:100%;vertical-align:middle;">
+              <div id="ctf" style="margin-bottom: 10px;">
+                <h2>Capture The Flags</h2>
+              </div>
+              <table style="width:100%;table-layout:auto;">
+                <tr>
+                  <td style="white-space: nowrap; padding-bottom:10px;">Team member @ TheHackersCrew
+                    <br>
+                    <span style="font-weight:normal;">Won <strong>17</strong> medals for the year of 2024, <strong>7 <span style="color:gold">Gold</span> + 5 <span style="color:silver">Silver</span> + 5 <span style="color:burlywood">Bronze</span></strong></span>
+                  </td>
+                  <td style="text-align:right; padding-right:50px; vertical-align:top;"><em>2023 Jan. - Now</em></td>
+                </tr>
+                <tr>
+                  <td style="white-space: nowrap;">Co-lead @ The Group Z0D1AC
+                    <br>
+                    <span style="font-weight:normal;">Achieved 2nd place RaymondJamesCTF 2024 <strong>($5000 cash prize)</strong>,<br> 3rd place RaymondJamesCTF 2023 <strong>($2500 cash prize)</strong>, etc.</span>
+                  </td>
+                  <td style="text-align:right; padding-right:50px; vertical-align:top;"><em>2022 Oct. - Now</em></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:15px 2.5% 15px 2.5%;width:100%;vertical-align:middle">
               <div id="cves" style="margin-bottom: 10px;">
                 <h2>StarBugs</h2>
               </div>
@@ -443,7 +444,7 @@
             </td>
           </tr>
         </table>
-        
+
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:0px">
@@ -469,6 +470,12 @@
         if (el) sections.push({ id: id, el: el, link: link });
       });
       function onScroll() {
+        // If at the bottom of the page, highlight the last section
+        if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight - 50) {
+          navLinks.forEach(function(l) { l.classList.remove('active'); });
+          sections[sections.length - 1].link.classList.add('active');
+          return;
+        }
         var scrollY = window.scrollY + 200;
         var current = sections[0];
         for (var i = 0; i < sections.length; i++) {
@@ -486,4 +493,3 @@
 </body>
 
 </html>
-

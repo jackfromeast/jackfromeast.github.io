@@ -134,7 +134,7 @@ span.highlight {
 /* Side Navigation */
 .side-nav {
   position: fixed;
-  top: 50%;
+  top: 30%;
   transform: translateY(-50%);
   left: max(20px, calc((100vw - 880px) / 2 - 190px));
   display: flex;

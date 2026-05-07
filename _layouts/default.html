@@ -22,6 +22,7 @@
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,500,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
@@ -64,7 +65,7 @@
                 My research interests broadly lie in Web Security, Software Security, and AI Security. I study emerging vulnerability classes and develop automated techniques, based on program analysis and LLMs, to detect and exploit them at scale across real-world systems.
               </p>
               <p>
-                Besides, I am a CTF pwn&web player. I lead the team Z0D1AC (JHU academic team) and is a member of <a href="https://www.thehackerscrew.team/members">thehackerscrew</a> (international team, Top 10 on <a href="https://ctftime.org/">CTFTime.org</a>).
+                Besides, I am a CTF pwn & web player. I lead the team Z0D1AC (JHU academic team) and am a member of <a href="https://www.thehackerscrew.team/members">thehackerscrew</a> (international team, Top 10 on <a href="https://ctftime.org/">CTFTime.org</a>).
               </p>
               <p style="text-align:center" class="social-links">
                 <a href="https://mailhide.io/e/zmIXSlvn" onclick="popup=window.open('https://mailhide.io/e/zmIXSlvn','mailhidepopup','width=580,height=635'); return false;"><i class="fas fa-envelope"></i> Email</a>&nbsp;/&nbsp;
@@ -151,14 +152,12 @@
               <h2>Publications</h2>
             </td>
           </tr>
-        </table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;font:15px">
 
           {% for post in site.posts %}
           {% for cat in post.categories %}
           {% if cat == 'research' %}
           <tr>
-            <td style="padding:0% 2.5%;width:75%;vertical-align:middle">
+            <td style="padding:0.5% 2.5%;width:75%;vertical-align:middle">
               <h3>{{post.title}}</h3>
               <br>
               {{post.authors}}
@@ -205,8 +204,6 @@
               <h2>Talks</h2>
             </td>
           </tr>
-        </table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;font:15px">
 
           {% assign sorted_talks = site.talks | sort: "date" | reverse %}
           {% for talk in sorted_talks %}
@@ -393,7 +390,7 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <div style="margin-bottom: 10px;">
+              <div id="experiences" style="margin-bottom: 10px;">
                 <h2>Experiences</h2>
               </div>
               <table style="width:100%;table-layout:auto;">

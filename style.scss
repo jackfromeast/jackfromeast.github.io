@@ -39,20 +39,17 @@ p,
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
-  font-display: auto;
 }
 
 strong {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
-  font-display: auto;
 }
 
 h1 {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: 'Bree Serif', serif;
   font-size: 32px;
   font-weight: normal;
-  font-display: auto;
   text-align: center;
   padding: 0px;
   margin-block-start: 14px;
@@ -227,6 +224,43 @@ span.highlight {
   margin-right: 3px;
   font-size: 15px;
   vertical-align: -1px;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 600px) {
+  #about tr {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #about td {
+    display: block;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 2.5% !important;
+  }
+
+  #about td img {
+    display: block;
+    width: 150px !important;
+    max-width: 150px !important;
+    margin: 0 auto;
+  }
+
+  table {
+    width: 100% !important;
+  }
+
+  td {
+    white-space: normal !important;
+    word-wrap: break-word;
+  }
+
+  td[style*="padding-right:50px"],
+  td[style*="padding-right:30px"] {
+    padding-right: 5px !important;
+    text-align: left !important;
+  }
 }
 
 

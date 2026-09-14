@@ -170,6 +170,7 @@
               <h3>{{post.title}}</h3>
               <br>
               {{post.authors}}
+              {% if post.pdf or post.poster or post.code or post.slides %}
               <br>
               {% if post.pdf %}
               <a href="{{post.pdf}}">paper</a> /
@@ -182,6 +183,7 @@
               {% endif %}
               {% if post.slides %}
               <a href="{{post.slides}}">slides</a> /
+              {% endif %}
               {% endif %}
               <br>
               <em>{{post.venue}}</em>

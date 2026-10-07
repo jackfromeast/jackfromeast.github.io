@@ -439,20 +439,62 @@
                 <h2>StarBugs</h2>
               </div>
               <p style="margin-right: 5%;">
-                I have discovered some vulnerabilities in popular OSS (over <a href="https://github.com/jackfromeast/jackfromeast.github.io/blob/master/_data/vulns.yml">50 CVEs</a> in repos with >1K stars on GitHub), as well as in products maintained by companies including Google, Microsoft, Meta, Vercel, and Ant Group (Alipay).
-                A selective list of them is shown below.
+                I’ve been finding and reporting vulnerabilities in widely used software, hoping to make it safer. I’m grateful to the maintainers and security teams who helped turn those reports into fixes.
               </p>
-              <table style="width:100%;table-layout:auto;">
-                {% for vuln in site.data.vulns %}
-                {% if vuln.selected %}
-                <tr>
-                  <td><a href="{{ vuln.link }}">{{ vuln.cve }}</a></td>
-                  <td><a href="{{ vuln.product_link }}">{{ vuln.product }}</a></td>
-                  <td>{{ vuln.type }}</td>
-                </tr>
-                {% endif %}
-                {% endfor %}
-              </table>
+              <p style="margin-right: 5%;">
+                <strong>Live Websites.</strong> XSS findings in
+                <a href="https://www.nvidia.com/">nvidia.com</a>,
+                <a href="https://www.cnn.com/">cnn.com</a>,
+                <a href="https://www.hp.com/">hp.com</a>,
+                <a href="https://www.intuit.com/">intuit.com</a>,
+                <a href="https://www.ibm.com/">ibm.com</a>,
+                <a href="https://www.okta.com/">okta.com</a>,
+                <a href="https://www.nist.gov/">nist.gov</a>,
+                <a href="https://www.w3.org/">w3.org</a>,
+                <a href="https://ubuntu.com/">ubuntu.com</a>,
+                <a href="https://www.espn.com/">espn.com</a>,
+                <a href="https://www.forbes.com/">forbes.com</a>, and
+                <a href="https://www.theguardian.com/">theguardian.com</a>.
+                Web cache deception findings that could lead to account takeover in
+                <a href="https://partner.ebay.com/">partner.ebay.com</a>,
+                <a href="https://www.iqiyi.com/">iqiyi.com</a>,
+                <a href="https://www.f5.com/">f5.com</a>,
+                <a href="https://www.asus.com/">asus.com</a>, and
+                <a href="https://www.mediafire.com/">mediafire.com</a>.
+              </p>
+              <p style="margin-right: 5%;">
+                <strong>Critical Software.</strong> I have reported more than 100 memory-safety bugs across
+                <a href="https://github.com/python/cpython">CPython</a>,
+                <a href="https://github.com/micropython/micropython">MicroPython</a>, and
+                <a href="https://github.com/RustPython/RustPython">RustPython</a>.
+                Public reports include examples of
+                <a href="https://github.com/python/cpython/issues/142664">use-after-free</a>,
+                <a href="https://github.com/python/cpython/issues/143376">type confusion</a>, and
+                <a href="https://github.com/python/cpython/issues/143196">out-of-bounds access</a>.
+              </p>
+              <p style="margin-right: 5%;">
+                <strong>OSS.</strong> I have found and reported vulnerabilities in open-source projects, resulting in more than 50 CVEs
+                (<a href="https://github.com/jackfromeast/jackfromeast.github.io/blob/master/_data/vulns.yml">full list</a>).
+                Selected projects include
+                <a href="https://wordpress.org/">WordPress Core</a>
+                (<a href="https://wordpress.org/news/2026/10/wordpress-7-1-3-maintenance-and-security-release/">XSS2Shell</a>),
+                <a href="https://github.com/tdurieux/anonymous_github">Anonymous GitHub</a>
+                (<a href="https://github.com/tdurieux/anonymous_github/security/advisories/GHSA-g485-8j3v-p6x8">XSS</a>),
+                <a href="https://hackmd.io/">HackMD</a>
+                (<a href="https://github.com/hackmdio/codimd/security/advisories/GHSA-22jv-vch8-2vp9">stored XSS</a>),
+                <a href="https://jupyter.org/">Jupyter Notebook/JupyterLab</a>
+                (<a href="https://github.com/advisories/GHSA-9q39-rmj3-p4r2">stored XSS</a>),
+                <a href="https://github.com/huggingface/transformers">Hugging Face Transformers</a> and
+                <a href="https://github.com/huggingface/smolagents">Smolagents</a>
+                (<a href="https://huntr.com/bounties/63ab1cfe-b573-4cf5-a7d3-fb6c957e34b0">sandbox escape</a>),
+                <a href="https://learn.microsoft.com/en-us/cli/azure/what-is-azure-cli">Microsoft Azure CLI</a>
+                (<a href="https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-24049">remote code execution</a>), and
+                <a href="https://webpack.js.org/">Webpack</a>
+                (<a href="https://github.com/advisories/GHSA-4vvj-4cpr-p986">DOM clobbering</a>).
+              </p>
+              <p style="margin-right: 5%;">
+                <strong>Acknowledgements and Bug Bounties.</strong> Google ($), Microsoft ($), Anthropic ($), GitHub ($), Snowflake ($), Meta, ByteDance ($), Vercel ($), Hugging Face ($), Xiaomi ($), iQIYI ($), and Ant Group ($).
+              </p>
             </td>
           </tr>
         </table>

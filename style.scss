@@ -104,6 +104,56 @@ li {
   font-weight: 700;
 }
 
+/* StarBugs: compact, readable groups within the academic page layout */
+.starbugs {
+  margin-right: 5%;
+}
+
+.starbugs-intro {
+  color: #3e4854;
+  line-height: 1.6;
+  margin: 2px 0 18px;
+}
+
+.starbugs-card {
+  display: grid;
+  grid-template-columns: 172px minmax(0, 1fr);
+  gap: 20px;
+  padding: 18px 20px;
+  margin: 0 0 10px;
+  background: #f8fafc;
+  border: 1px solid #e5ebf1;
+  border-radius: 9px;
+}
+
+.starbugs-card h3 {
+  display: block;
+  color: #224b8d;
+  line-height: 1.35;
+  margin: 0;
+}
+
+.starbugs-card-content p {
+  line-height: 1.6;
+  margin: 0;
+}
+
+.starbugs-card-content p + p {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .starbugs {
+    margin-right: 0;
+  }
+
+  .starbugs-card {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 16px;
+  }
+}
+
 /* Image fade helpers */
 .one {
   width: 160px;

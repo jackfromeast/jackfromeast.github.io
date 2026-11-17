@@ -195,10 +195,13 @@
               </span>
               {% endif %}
               {% if post.award %}
-              <span style="display: flex; align-items: center;">
-                <span style="font-size: 0.8em; color: red; margin-right: 0.5em;">&#9632;</span>
-                <span style="color: red;"><strong>{{post.award}}</strong></span>
+              {% assign awards = post.award | split: "<br>" %}
+              {% for award in awards %}
+              <span style="display: flex; align-items: flex-start;">
+                <span style="font-size: 0.8em; color: red; margin-right: 0.5em; line-height: 1.4;">&#9632;</span>
+                <span style="color: red;"><strong>{{award}}</strong></span>
               </span>
+              {% endfor %}
               {% endif %}
               <p></p>
               {{ post.excerpt }}

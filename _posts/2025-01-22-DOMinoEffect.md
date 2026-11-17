@@ -11,6 +11,6 @@ poster: "/"
 code: "https://github.com/jackfromeast/TheHulk"
 slides: "/assets/DOMinoEffect_Slides.pdf"
 features: "Artifact Badges: Artifacts Available, Artifacts Functional, Results Reproduced"
-award: "Honorable Mentions (6% among accepted papers)"
+award: "Honorable Mentions (6% among accepted papers)<br>Best Practical Paper Award, Cybersecurity Award 2026 ($1,500)"
 # features: "Resulted in 19 CVEs, including Jupyter, Hackmd.io, Webpack, MathJax, Prism, and etc. with Google Client API Library (acknowledged by Google)."
 ---
